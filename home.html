@@ -3,134 +3,83 @@
 <html>
 
 <head>
-  <title>Redesign</title>
+  <title>A/B Testing</title>
   <link rel="stylesheet" href="index.css">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 
 <body>
   <h1 class="text" id="TitleName">
-    Resdesigning the Zumix Website
+    A/B Testing of cacti website
   </h1>
-  <p class="text">Here I'll be taking a look at the about page of the Boston non-profit organization Zumix and
-    redesigning it.
-  </p>
-  <h2 class="header">The Original Webpage</h2>
-
-
-  <img id="zumix_page" src="./images/zumix_page.png">
-  <p class="text">Taking a look at this UI. There are a couple of glaring issues wtih regards to usability,
-    learnability, memorability, and accessibility. The original webpage can be found <a
-      href="https://www.zumix.org/about">here.</a></p>
-
-  <h2 class="header">Issues</h2>
-  <div id="usability-list">
-    <ul class="text">
-      <hr class="divider">
-      <li>
-        Usability
-      </li>
-      <ul>
-        <li>
-          Unfortunately, while this webpage is responsive, when the screen size is changed, buttons and text become
-          extremely small for smaller screens. This makes the webpage nearly unusable.
-        </li>
-        <li>
-          In addition, the social icons towards the bottom of the page are extremely small even on a larger screen.
-        </li>
-      </ul>
-      <hr class="divider">
-      <li>
-        Learnability
-        <ul>
-          <li>
-            Since the "All About Us" header is the same color as the buttons, it implies that it can be clicked. However
-            in reality it is just a header.
-          </li>
-        </ul>
-      </li>
-      <hr class="divider">
-      <li>
-        Memorability
-        <ul>
-          <li>
-            The bright yellow colors are fairly striking and memorable. With how jarring the color is with the rest of
-            the page it makes it easy to remember their function after a long period of time.
-          </li>
-          <li>
-            However, one issue is that there is some a secondary navbar above the primary navbar. Since the text is
-            smaller and not highlighted, it makes it difficult to remember that that is where some of the important
-            links are. One does not expect a secondary navbar above the primary one.
-          </li>
-        </ul>
-      </li>
-      <hr class="divider">
-      <li>
-        Accessibility
-        <ul>
-          <li>
-            When running WebAIM WAVE on this webpage. It highlights multiple areas where the text has low contrast with
-            the background which makes it harder to read.
-          </li>
-          <li>
-            When a screenreader is used to read through the webpage, it goes through the first few headings in the nav
-            bar, but then proceeds to the body of the text. Typically, one would expect it to go through all of the
-            headings first, rather than jumping around.
-          </li>
-          <li>
-            In addition, since the website is not responsive and does not utilize all of the screen space, the text can
-            be small to read.
-          </li>
-        </ul>
-      </li>
-    </ul>
+  <p class="small_header">Here I'll be running a simple A/B test on this basic cacti selling website. I will be testing for Time to Completion and the return rate.</p>
+  <div class="flex-container">
+    <div id="image-container">
+      <p class="image-header">A Version</p>
+      <img class="cactus-image" src="images/A.png">
+      <p class="image-caption">In this version, the cart is positioned horizontally on the right side.</p>
+    </div>
+    <div id="image-container">
+      <p class="image-header">B Version</p>
+      <img class="cactus-image" src="images/B.png">
+      <p class="image-caption">In this version, the cart is positioned towards the bottom of the screen below the images.</p>
+    </div>
   </div>
 
-  <p class="text">Next, I'll address how I went about fixing these problems.</p>
+  <h1 class="header">
+    Hypothesis
+  </h1>
+  <div class = "flex-container">
+    <div class = "text-container">
+      <p class = "image-header">Null Hypothesis</p>
+      <p class = "text">Changing the position of the cart in this manner will have no effect on the Time to Completion and the return rate.</p>
+    </div>
+    <div class = "text-container">
+      <p class = "image-header">Alternate Hypothesis</p>
+      <p class = "text">Changing the position of the cart in this manner will have a positive effect on the Time to Completion and will have a different return rate.</p>
+    </div>
+  </div>
+  <p class="small_header">
+    The reasoning behind this alternate hypothesis is that the cart is in an easier to notice place.
+    I believe that users will not completely follow the horizontal model, and instead jump around to different
+    images. Because of this, having the cart in a more central location will make finding it faster, reducing the
+    time to completion. In addition, putting the cart in this location may give off a feeling of being more "final",
+    which would reduce the return rate.
+  </p>
 
-  <h2 class="header">Low-Fidelity Prototypes</h2>
+  <h1 class="header">
+    Gathering Tests
+  </h1>
+  <p class="text">
+    This test was given to college students at Brown University, where each user was given either the A version or B version.
+    Data was then collected about how quickly they completed the page, and if they returned to the shopping page after
+    viewing the cart.
+  </p>
 
-  <p class="text">Fixing most of these issues is a matter of making the page properly responsive, and changing minor
-    layout and color changes. </p>
+  <h1 class="header">
+    Results
+  </h1>
+  <div class = "flex-container">
+    <img class="image" src="images/Completion.png">
+    <img class="image" src="images/Return.png">
+  </div>
+  <img class ="infographic" src="images/Infographic.png">
 
-  <p class="text">For layout changes, here are the diagrams of my low-fidelity prototypes:</p>
+  <h1 class="header">
+    Conclusion
+  </h1>
+  <p class="text">The average Time to Completion was actually lower in version A than in version B which is the opposite of my alternate hypothesis. However, given how both of these tests resulted in insignificant statistics, it is impossible to know whether the results
+    will repeat themselves in another scenario.
+  </p>
 
-  <h3 class="small_header">Desktop</h3>
-  <img id="lofi1" src="images/lo-fi1.png">
+  <h1 class="header">
+    Takeaways
+  </h1>
+  <ul>
+    <li>A/B tests need to be statistically significant in order to make conclusive changes</li>
+    <li>Assumptions about people's behaviour area just assumptions and could very well be wrong</li>
+  </ul>
 
-  <h3 class="small_header">Mobile</h3>
-  <img id="lofi2" src="images/lo-fi2.png">
-
-  <h3 class="small_header">Tablet</h3>
-  <img id="lofi3" src="images/lo-fi3.png">
-
-  <h2 class="header">High-Fidelity Prototype</h2>
-
-  <h3 class="small_header">Desktop</h3>
-  <img id="hifi1" src="images/hi-fi1.png">
-
-  <h3 class="small_header">Mobile</h3>
-  <img id="hifi2" src="images/hi-fi2.png">
-
-  <h3 class="small_header">Tablet</h3>
-  <img id="hifi3" src="images/hi-fi3.png">
-
-  <h2 class="header">Visual Style Guide</h2>
-  <img id="style_guide" src="images/style_guide.png">
-
-
-  <h2 class="header">Finished Webpage</h2>
-  <p class="text"> The Finished webpage can be found <a href="https://agile-ravine-26502.herokuapp.com/">by clicking
-      here.</a> Here is a snapshot of what the finished product looks like</p>
-
-  <img id="webpage" src="images/webpage.png">
-
-
-  <h2 class="header">Final Thoughts</h2>
-  <p class="text">This webpage I designed is much more responsive than the original webpage, and all of the content is
-    visible regardless of screen size. When viewing my website through WebAIM WAVE there are still a couple of low
-    contrast issues. However, I think it is still much more readable than the original webpage. When using a
-    screenreader, it goes in a logical order. Starting from the top and going down.</p>
 </body>
 
 </html>
