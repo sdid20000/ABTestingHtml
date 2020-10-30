@@ -1,0 +1,133 @@
+#zumix_page{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 60%;
+    height: 60%;
+    align-content:center;
+}
+
+#lofi1{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    align-content:center;
+    width:50%;
+    height:50%;
+}
+
+#lofi2{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    align-content:center;
+    width:20%;
+    height:20%;
+}
+
+#lofi3{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    align-content:center;
+    width:30%;
+    height:30%;
+}
+
+#hifi1{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    align-content:center;
+    width:50%;
+    height:50%;
+}
+
+#hifi2{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    align-content:center;
+    width:20%;
+    height:20%;
+}
+
+#hifi3{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    align-content:center;
+    width:30%;
+    height:30%;
+}
+
+#style_guide{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    align-content:center;
+    width:70%;
+    height:70%;
+}
+
+#webpage{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    align-content:center;
+    width:70%;
+    height:70%;
+}
+
+.divider{
+    height:2px;
+    color:gray;
+    background-color: gray;
+}
+
+#TitleName{
+    font-size: 32pt;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.header{
+    padding-top: 2.5%;
+    font-size: 24pt;
+    text-align:center;
+}
+
+.small_header{
+    padding-top: 2.5%;
+    font-size: 20pt;
+    text-align:center;
+}
+
+li{
+    margin: 20px 0;
+}
+
+
+.text{
+    font-size: 18pt;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.row{
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+}
+
+.column{
+    float:left;
+    width:50%;
+}
